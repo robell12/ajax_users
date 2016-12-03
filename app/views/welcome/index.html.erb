@@ -1,0 +1,27 @@
+<div class='row'>
+  <div class='col s6'>
+    <h1>Ruby Users</h1>
+    <form id='add-user-form' method='POST' action='api/v1/users'>
+      <label>First Name</label>
+      <input id='user-first-name' type='text' name='user[first_name]' required />
+      <br />
+
+      <label>Last Name</label>
+      <input id='user-last-name' type='text' name='user[last_name]' required />
+      <br />
+
+      <label>Phone Number</label>
+      <input id='user-phone-number' type='text' name='user[phone_number]' />
+      <br />
+
+      <input type='submit' class='btn green' />
+    </form>
+  </div>
+  <div class='col s6'>
+    <h3>User List</h3>
+    <button id='show-users' type='button' class='btn blue'>Show Users</button>
+    <div class='row' id='users'>
+    </div>
+  </div>
+
+</div>
